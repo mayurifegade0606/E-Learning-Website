@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML_TUTORIAL</title>
+<link rel="stylesheet" href="HTML-Tutorial.css?v=<?php echo time(); ?>">
+
+</head>
+<body>
+  <div class="courses_Bar">
+    <nav>
+
+      <div class="logo">
+        <img src="capstonelogo.png">
+    </div>
+
+      <ul>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Assignments</a></li>
+        <li><a href="#">Learn-Videos</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTopic(event, 'HTML-Basic')" id="defaultOpen">Basic-HTML</button>
+  <button class="tablinks" onclick="openTopic(event, 'styles')">HTML-Formating and Styles</button>
+  <button class="tablinks" onclick="openTopic(event, 'colors')">HTML-Colors</button>
+
+  <button class="tablinks" onclick="openTopic(event, 'HTML-CSS')" >HTML-CSS</button>
+  <button class="tablinks" onclick="openTopic(event, 'Links')">Links and Images</button>
+  <button class="tablinks" onclick="openTopic(event, 'Tables')">Tables</button>
+  <button class="tablinks" onclick="openTopic(event, 'List')">List</button>
+
+  <button class="tablinks" onclick="openTopic(event, 'HTML-CSS')" >HTML-CSS</button>
+  <button class="tablinks" onclick="openTopic(event, 'Links')">Links and Images</button>
+  <button class="tablinks" onclick="openTopic(event, 'Tables')">Tables</button>
+  <button class="tablinks" onclick="openTopic(event, 'List')">List</button>
+
+  <button class="tablinks" onclick="openTopic(event, 'Tables')">Tables</button>
+  <button class="tablinks" onclick="openTopic(event, 'List')">List</button>
+
+</div>
+
+
+<div id="HTML-Basic" class="tabcontent">
+  <h3>What is HTML?</h3>
+  
+  <p>
+    <li>HTML stands for Hyper Text Markup Language</li>
+    <li>HTML is the standard markup language for creating Web pages</li>
+    <li> HTML describes the structure of a Web page</li>
+    <li>HTML consists of a series of elements</li>
+    <li>HTML elements tell the browser how to display the content</li>
+    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+
+    <br>
+    
+    <li>The   <b>!DOCTYPE html</b>  is an HTML Element?</li>
+    <li>The   <b> html </b>element is the root element of an HTML page</li>
+    <li>The   <b> head </b>element contains meta information about the HTML page</li>
+    <li>The   <b> title </b> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li> 
+    <li>The   <b>body</b> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs      , images, hyperlinks, tables, lists, etc.</li>
+    <li>The   <b> h1</b>element defines a large heading</li>
+    <li>The   <b> p </b>element defines a paragraph</li>
+
+    <br>
+    <h2>The href Attribute</h2>
+    <h3>HTML-Attibute</h3>
+    The <b>a</b> tag defines a hyperlink. The <b>href</b> attribute specifies the URL of the page the link goes to:
+    <br>
+    <h2>The src Attribute</h2>
+    The <b>img</b> tag is used to embed an image in an HTML page. The <b>src</b> attribute specifies the path to the image to be displayed:
+    <br>
+    <h2>The width and height Attributes</h2>
+    The <b> img</b> tag should also contain the width and height attributes, which specifies the <b>width</b> and <b>height</b> of the image (in pixels):
+
+      
+  </p>
+</div>
+
+<div id="styles" class="tabcontent">
+  <h3>HTML Formatting Elements</h3>
+  Formatting elements were designed to display special types of text:
+<p>
+    <b>b</b>        - - - - -Bold text         <br>
+   <b>strong</b>   - Important text    <br>
+    <b>li</b>       - - - - - Italic text       <br>
+    <b>em</b>       - Emphasized text   <br>
+    <b>mark</b>     - Marked text       <br>
+    <b>small</b>    - Smaller text      <br>
+    <b>del</b>      - Deleted text      <br>
+    <b>ins</b>      - Inserted text     <br>
+    <b>sub</b>      - Subscript text    <br>
+    <b>sup</b>      - Superscript text  <br>
+
+    <h2>HTML Styles</h2>
+    The HTML  <b>style</b>  attribute is used to add styles to an element, such as color, font, size, and more.
+    <br>
+  <h2>Background Color</h2>
+The CSS background-color property defines the background color for an HTML element.
+  <br>
+<h2>Text Color</h2>
+The CSS color property defines the text color for an HTML element:
+
+<br>
+<h2>Fonts</h2>
+The CSS font-family property defines the font to be used for an HTML element:
+
+<br>
+<h2>Text-Size</h2>
+The CSS font-size property defines the text size for an HTML element:
+
+<br>
+<h2>Text Alignment</h2>
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+</p>
+</div>
+
+
+<div id="colors" class="tabcontent">
+  <h2>HTML Colors</h2>
+HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+<br>
+<h2>Background Color </h2>
+  You can set the background color for HTML elements:
+  <h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+<br>
+<h2>Text Color</h2>
+You can set the color of text:
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+<br>
+<h2>Border Color</h2>
+You can set the color of borders:
+
+
+Example
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+<br>
+<h2>Color Values</h2>
+In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
+
+
+Example
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+</div>
+
+<div id="HTML-CSS" class="tabcontent">
+  <h2>HTML Styles - CSS</h2>
+CSS stands for Cascading Style Sheets.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+<br>
+
+<h2 style="color: #ff6347;">What is CSS?</h2>   
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+<br>
+
+<h2>Using CSS</h2>
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements<br>
+Internal - by using a  <b>style</b>  element in the <b>head</b> section<br>
+External - by using a <b>link</b> element to link to an external CSS file<br>
+
+<h2>CSS Border</h2>
+The CSS border property defines a border around an HTML element.<br>
+Tip: You can define a border for nearly all HTML elements.<br>
+Example<br>
+Use of CSS border property: <br>
+<b>
+p {
+  border: 2px solid powderblue;
+}
+</b>
+<br>
+<h2>CSS Padding</h2>
+The CSS padding property defines a padding (space) between the text and the border.<br>
+Example<br>
+Use of CSS border and padding properties:
+<br>
+<b>
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+</b>
+<br>
+<h2>CSS Margin</h2>
+The CSS margin property defines a margin (space) outside the border.<br>
+Example<br>
+Use of CSS border and margin properties:
+<br>
+<b>
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+</b>
+<br>
+<h3>Link to External CSS</h3>
+External style sheets can be referenced with a full URL or with a path relative to the current web page.
+<br>
+Example<br>
+This example uses a full URL to link to a style sheet:
+<br>
+</div>
+
+<div id="Links" class="tabcontent">
+  <h2>HTML Links</h2>
+Links are found in nearly all web pages. Links allow users to click their way from page to page.<br>
+HTML Links - Hyperlinks<br>
+HTML links are hyperlinks.<br>
+You can click on a link and jump to another document.<br>
+When you move the mouse over a link, the mouse arrow will turn into a little hand.<br>
+
+<br>
+HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. 
+  <br>It has the following syntax:
+<b>
+(<a href="url">link text</a>)
+</b>
+
+</div>
+
+<div id="Tables" class="tabcontent">
+  <h2>Table Cells</h2>
+Each table cell is defined by a <td> and a </td> tag.
+<br>
+td stands for table data.
+<br>
+Everything between <b>td</b> and <b>/td</b> are the content of the table cell.
+<br>
+<h2>Table Rows</h2>
+Each table row starts with a <b>tr</b> and end with a <b>/tr</b> tag.
+<br>
+<h3>tr stands for table row.</h3>
+<br>
+<h2>Table Headers</h2>
+Sometimes you want your cells to be headers, in those cases use the <b>th</b> tag instead of the <b>td</b>  tag:
+<br>
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>TH elements define table headers</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+<p>To undestand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+</div>
+
+<div id="List" class="tabcontent">
+  </div>
+  
+
+<script src="HTML_TUTORIAL.js"></script>
+</body>
+</html> 

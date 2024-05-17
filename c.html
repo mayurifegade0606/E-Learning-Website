@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML_TUTORIAL</title>
+<link rel="stylesheet" href="HTML-Tutorial.css?v=<?php echo time(); ?>">
+
+</head>
+<body>
+  <div class="courses_Bar">
+    <nav>
+
+      <div class="logo">
+        <img src="capstonelogo.png">
+    </div>
+
+      <ul>
+        <li><a href="HTML_Tutorial.html">Tutorials</a></li>
+        <li><a href="assignment_c.html">Assignments</a></li>
+        <li><a href="video.html">Learn-Videos</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTopic(event, 'Basic-C')" id="defaultOpen">Introduction To C</button>
+    <button class="tablinks" onclick="openTopic(event, 'structure')" >Structure of C programming</button>
+    <button class="tablinks" onclick="openTopic(event, 'variables')"> Variables, Data Types & Operators</button>  
+    <button class="tablinks" onclick="openTopic(event, 'Hello World')">Hello World</button>  
+    <button class="tablinks" onclick="openTopic(event, 'flow-control')">Desicion Making & Looping</button>
+    
+    <button class="tablinks" onclick="openTopic(event, 'Basic-C')" id="defaultOpen">Introduction To C</button>
+    <button class="tablinks" onclick="openTopic(event, 'structure')" >Structure of C programming</button>
+    <button class="tablinks" onclick="openTopic(event, 'variables')"> Variables, Data Types & Operators</button>  
+    <button class="tablinks" onclick="openTopic(event, 'Hello World')">Hello World</button>  
+    <button class="tablinks" onclick="openTopic(event, 'flow-control')">Desicion Making & Looping</button>
+    
+    <button class="tablinks" onclick="openTopic(event, 'Basic-C')" id="defaultOpen">Introduction To C</button>
+    <button class="tablinks" onclick="openTopic(event, 'structure')" >Structure of C programming</button>
+    <button class="tablinks" onclick="openTopic(event, 'variables')"> Variables, Data Types & Operators</button>  
+    <button class="tablinks" onclick="openTopic(event, 'Hello World')">Hello World</button>  
+    <button class="tablinks" onclick="openTopic(event, 'flow-control')">Desicion Making & Looping</button>
+    
+    <button class="tablinks" onclick="openTopic(event, 'Basic-C')" id="defaultOpen">Introduction To C</button>
+    <button class="tablinks" onclick="openTopic(event, 'structure')" >Structure of C programming</button>
+    <button class="tablinks" onclick="openTopic(event, 'variables')"> Variables, Data Types & Operators</button>  
+    <button class="tablinks" onclick="openTopic(event, 'Hello World')">Hello World</button>  
+    <button class="tablinks" onclick="openTopic(event, 'flow-control')">Desicion Making & Looping</button>
+    
+  </div>
+
+
+  <div id="Basic-C" class="tabcontent">
+
+    <h1>Introduction to C</h1>
+
+    <p>C is a programming language developed at AT & T’s Bell Laboratories of USA in 1972 by Dennis Ritchie.</p>
+
+    <p>C is modular, portable, reusable</p>
+
+    <h3>* Features Of C Programming</h3>
+
+    <img src="C Language Feature.JPG" alt="Features of C" height="300px" width="300px">
+
+    <h2><b>* C is...</b></h2>
+
+    <li>Structured language :-</li>
+
+    <ol>
+        <li>It has the ability to divide and hide all the information and instruction.
+           </li>
+
+        <li> Code can be partitioned in C using functions or code block.</li>
+        <li>C is a well structured language compare to other.</li>
+
+    </ol>
+
+    <li>General purpose language :-</li>
+
+    <ol>
+
+        <li>Make it ideal language for system programming.
+            It can also be used for business and scientific application.</li>
+
+        <li>ANSI established a standard for c in 1983.</li>
+
+        <li>The ability of c is to manipulate bits,byte and addresses.</li>
+
+    </ol>
+
+    <h3>Keywords in C</h3>
+
+    <p>Keywords are the words whose meaning has already been explained to the C compiler.
+         There are only 32 keywords available in C. The keywords are also called ‘Reserved words’.</p>
+
+       <img src="keywords in c.jpg" alt="Keywords">
+
+
+
+  </div>
+
+  <div id="structure" class="tabcontent">
+
+    <h1>Structure Of C Programming</h1>
+
+         <p> A C program is divided into different sections. There are six main sections to a basic c program.</p>
+
+            <p>   The six sections are, </p> 
+            
+            <li>Documentation</li> 
+          <li>    Link</li>
+           <li>        Definition</li>
+                <li>        Global Declarations</li>
+                    <li>        Main functions</li>
+                       <li>        Subprograms
+                                                     </li>
+
+                                                     <br>
+                                                     <br>
+
+    <img src="Structure of c.jpg" alt="Structure of c" height="50px" width="50px">                                      
+
+ 
+    <p>The whole code follows this outline. Each code has a similar outline. Now let us learn about each of this layer in detail:-</p>
+
+    <ol>
+
+        <li>Documentation Section :- </li>
+             The documentation section is the part of the program where the programmer gives the details associated with the program. He usually gives the name of the program, the details of the author and other details like the time of coding and description. 
+            It gives anyone reading the code the overview of the code.
+
+            <br>
+            <br>
+        <li>Link Section :-</li>
+                This part of the code is used to declare all the header files that will be used in the program. This leads to the compiler being told to link the header files to the system libraries.
+        <br>
+<br>
+        <li>Definition Section :-</li>
+        In this section, we define different constants. The keyword define is used in this part.
+
+        <font style="color: rgb(87, 72, 218);"><p>#define PI=3.14</p></font>
+    <br>    
+        
+
+        <li>Global Declaration Section :-</li>
+        This part of the code is the part where the global variables are declared. All the global variable used are declared in this part. The user-defined functions are also declared in this part of the code.
+<br>
+<br>
+
+        <li>Main Function Section :-
+        </li>
+
+        Every C-programs needs to have the main function. Each main function contains 2 parts. A declaration part and an Execution part. The declaration part is the part where all the variables are declared. The execution part begins with the curly brackets and ends with the curly close bracket.
+         Both the declaration and execution part are inside the curly braces.<br><br>
+
+        <li>Sub Program Section :-</li>
+
+        All the user-defined functions are defined in this section of the program.
+
+    </ol>
+
+   
+    <img src="Basic Structure of C Language with an example.jpg">
+
+
+
+
+    <h2>Rules for Writing, Compiling and Executing the C program.</h2>
+
+    <ol>
+
+        <li>C is case sensitive means variable named "COUNTER" is different from a variable named "counter".</li>
+
+        <li>All keywords are lowercased.
+            Keywords cannot be used for any other purpose (like variable names).</li>
+
+        <li>Every C statement must end with a " ; ". Thus ";" acts as a statement terminator.
+        </li>
+
+        <li>Blank spaces may be inserted between two words to improve the readability of the statement. 
+            However, no blank spaces are allowed within a variable, constant or keyword.</li>
+
+        <li>Variable must be declared before it is used in the program.</li>
+        <li>   File should be have the extension .c</li>
+
+        <li>First character must be an alphabet or underscore, no special symbol other than an underscore, no commas or blank spaces are allowed with in a variable, constant or keyword.</li>
+
+        <li>Program need to be compiled before execution.
+        </li>
+
+    </ol>
+
+  </div>
+
+  <div id="variables" class="tabcontent">
+
+    <h1>Variables</h1>
+
+    <li>In the C Programming Language, variables are used to store various types of data.</li>
+    <li> Variables must be defined before they can be used within a program. Variable declarations include the type of the variable and, optionally, its initial value.</li>
+    <li>The syntax for declaring a variable in the C language is:-</li>
+    <font style="color: rgb(87, 72, 218);">c_type variable_name1 [= value1];</font>
+
+    <li>Declaration statements must end with a semicolon.</li>
+
+
+  <h3>Parameters or Arguments    </h3>
+
+    <li>c_type </li>
+    The type of the variable being declared. <br>
+
+    <li>variable_name1</li>
+    
+    The name of the first variable to declare. <br>
+
+    <li>value1</li>
+    Optional. If provided, it is the value to assign to variable_name1.<br>
+
+    <li>variable_name2, ... variable_name_n
+    </li>
+    Optional. These are additional variables that will be declared with the same C type.<br>
+
+      <li>value2, ... value_n
+      </li>
+      Optional. These are the values that you wish to assign to variable_name2 through variable_name_n.<br>
+
+
+
+
+    <h1>Data types & Placeholders</h1>
+
+    <lI>Data type defines a set of values that a variable can store along with a set of operations that can be performed on it.
+    </li>
+    <li>C has 5 basic built-in data types. </lI>
+   <li>A variable takes different values at different times. </li> 
+   <li>  General form for declaring a variable is:-
+  
+  <br> 
+     <font style="color: rgb(87, 72, 218);">type name;</font> 
+
+    </li>
+<br>
+    <li>Common data types are:-</li>
+
+    <ol>
+
+        <li>int - integer</li>
+            <li> char - character</li>
+                <li> long - long integer</li>
+                    <li> float - float number</li>
+                        <li> double - long float</li>
+
+    </ol>
+
+    <br>
+    <li>Other placeholders are:-</li>
+
+    <ul>
+    <li>%c        -          Character</li>
+    <li>  %d        -           Signed decimal integer</li>
+    <li> %i         -          Signed decimal integer</li>
+    <li>%e         -          Scientific notation[e]</li>
+    <li>%E        -           Scientific notation[E]</li>
+    <li>%f          -         Decimal floating point</li>
+    <li>%o         -       unsigned octal</li>
+    <li>%s         -     String of character</li>
+   <li>%u           -     unsigned decimal integer</li>
+   <li>    %x           -   unsigned Hexadecimal (lower)</li>
+   <li> %X          - unsigned Hexadecimal (upper)</li>
+   <li> %p            - dispaly a pointer</li>
+   <li> %%               - print a %</li>
+
+    </ul>
+
+    <br>
+    <h1>Operators</h1>
+
+    <li>The symbols which are used to perform logical and mathematical operations in a C program are called C operators.</li>
+      <li>    These C operators join individual constants and variables to form expressions.</li>
+        <li>    Operators, functions, constants and variables are combined together to form expressions.</li>
+          <li>    Consider the expression A + B * 5. where, +, * are operators, A, B  are variables, 5 is constant and A + B * 5 is an expression</li>
+
+    <li>Operators in C are :-</li>
+
+    <br>
+
+    <img src="Operators-In-C.jpg" alt="operators-C">
+
+    <br>
+
+    <h3>Types of Operators</h3>
+
+      <li>Unary Operators.</li>
+
+      The unary operator works on a single operand or variable. Increment/Decrement operators also called as Unary operators.
+
+      <li>Binary Operators.</li>
+      The binary operator works on two operands or variables like arithmetic operator, relational operator, bit-wise operator assignment operator, and logical operator.
+
+      <li>Ternary Operators.</li>
+      The ternary operator works on more than two operands or variables like conditional operator. The conditional operator also called a ternary operator.
+
+
+
+      <ol>
+
+        <li>Arithmetic Operators.</li>
+
+        These operators are used to perform mathematical operations. e.g. Addition, Subtraction, Multiplication, Division, Modulus.
+        <br>
+
+        <br>
+        <img src="ArithmeticOperators-C.jpg">
+
+        <br>
+        <br>
+
+        <li>Assignment Operators.</li>
+
+        These are used to assign the values for the variables in C programs.
+
+        <br>
+        <br>
+
+        <img src="AssignmentsOperator-c.jpg">
+
+        <br>
+        <br>
+
+        <li>Increment/Decrement Operators.  </li>
+
+        The increment / Decrement operators are used to perform increment/decrement operation.
+         In the case of increment operation the value of operand or variable incremented by one, while in the case of decrement operation the value of operand or variable decremented by one. 
+         e.g. x++, ++x, x–, –x.
+        <br>
+        <br>
+
+
+        <img src="IncrDecrOperators-c.jpg">
+        <br>
+
+        <br>
+
+        <li>Bitwise Operators.</li>
+
+        The bitwise operators are used to perform bit-wise operations on operands or variables. e.g. bit-wise AND operation, bit-wise OR operation, etc.
+
+        <br>
+        <br>
+
+        <img src="BitwiseOperators-c.jpg">
+
+        <br>
+        <br>
+
+        <li>Conditional/Ternary Operators.</li>
+
+        The conditional or ternary operator is used to perform the conditional operation on three operands or variables. e.g. If the condition is true, it returns first value i.e. TRUE case value, otherwise returns second value i.e. FALSE case value.
+
+        <br>
+        <br>
+
+        <img src="ConditionalOperator-c.jpg">
+        <br>
+        <br>
+
+        <li>Logical Operators.</li>
+
+        The logical operators are used to perform the logical operation on two operands or variables. e.g. AND operation, OR operation, NOT operation.
+
+        <br>
+        <br>
+
+        <img src="LogicalOperator-c.jpg">
+
+        <br>
+        <br>
+
+        <li>Relational Operators.</li>
+
+        The relational operators are used to perform the relational operation between two operands or variables. e.g. comparison, equality check, etc.
+        <br>
+
+        <br>
+
+        <img src="RelationalOperator-c.jpg">
+
+
+
+      </ol>
+
+    
+
+  </div>
+
+  <div id="Hello World" class="tabcontent">
+
+      <h1>Hello world program in C
+      </h1>
+
+      <li>How to write a hello world program in C language? To learn a programming language, you must start writing programs in it, and this could be your first C program. 
+        Let's have a look at the program first.</li>
+        <br><br>
+
+        <img src="hello-world-c.jpg">
+
+        <li>Library function printf is used to display text on the screen, '\n' places the cursor at the beginning of the next line,
+           "stdio.h" header file contains the declaration of the function.</li>
+
+        <li>The program's purpose is to get familiar with the syntax of the C programming language. In it, we have printed a particular set of words. 
+          To print whatever you want to, see C program to print a string.</li>
+
+        
+
+        <h3>Output of program:-</h3>
+        <br>
+        <img src="c-hello-world-output.jpg">
+
+    
+
+  </div>
+
+  <div id="flow-control" class="tabcontent">
+
+    <h1>Desicion Making Statements.</h1>
+
+    <li>Decision making statement is depending on the condition block need to be executed or not which is decided by condition.    </li>
+
+    <li>If the condition is "true" statement block will be executed, if condition is "false" then statement block will not be executed.    </li>
+
+    <li>In this section we are discuss about if-then (if), if-then-else (if else), and switch statement. In C language there are three types of decision making statement.    </li>
+
+    <img src="C-Decision-Making.jpg" alt="Decision">
+
+
+
+
+    <h1>Looping Statements.</h1>
+
+    <li>Execution of a statement or set of statement repeatedly is called as looping.</li>
+
+      <li>  The loop may be executed a specified number of times and this depends on the satisfaction of a test condition.</li>
+      
+        <li>   A program loop is made up of two parts one part is known as body of the loop and the other is known as control condition.</li>
+      
+          <li>   Depending on the control condition statement the statements within the loop may be executed repeatedly.</li>
+      
+      
+            <li>  Depending on the position of the control statement in the loop, a control structure may be classified either as an entry controlled loop or as an exit controlled loop.</li>
+
+
+            <img src="C-loops.jpg" alt="Looping">
+
+      <h3>Following are the steps in a looping process: </h3>
+
+      <ol>
+        
+        <li>Initialization of loop control variable.</li>
+
+        <li >    Test of a specific condition for the execution of the loop
+        </li>
+
+        <li>      Execution of the statements in the body of the loop
+        </li>
+
+        <li>      Altering the value of the loop control variable
+        </li>
+
+      </ol>
+
+      <li> In the beginning the loop control variable is initialized after that step2, step3 and step4 are carried out till specified test condition becomes false.
+       <li>The test may be either to determine whether the loop has been repeated the specified number of times or to determine whether a particular condition has been met. The C language provides 3 loop structures.</li>
+      </li> 
+
+        <ol>
+ 
+         <li>while loop.</li>
+         <li>do-while loop.</li>
+         <li>for loop.</li>
+ 
+        </ol>
+      
+      
+      
+
+
+
+
+
+  </div>
+
+
+
+  <script src="HTML_TUTORIAL.js"></script>
+</body>
+</html> 

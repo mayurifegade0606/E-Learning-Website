@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live video</title>
+        <link href="HTML-Tutorial.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+             
+    </head>
+    <body>
+        <div class="courses_Bar">
+            <nav>
+        
+              <div class="logo">
+                <img src="capstonelogo.png">
+            </div>
+        
+              <ul>
+                <li><a href="HTML_Tutorial.html">Tutorials</a></li>
+                <li><a href="assignment_c.html">Assignments</a></li>
+                <li><a href="video.html">Learn-Videos</a></li>
+        
+              </ul>
+            </nav>
+          </div>
+
+         
+          <body>
+              <div class="video">
+                  <h1>Introduction to C</h1>
+
+              </div>
+
+              <div class="playvideo">
+            <button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+            </div>
+          
+            <div class="fullscreen">
+            <button onclick="openFullscreen();" type="button">Fullscreen Mode</button>
+          </div>
+
+        <video id="myVideo1" height="300px" width="300px">
+               <source src="c video.mp4" type="video/mp4">
+        </video>
+
+        <script> 
+            var vid = document.getElementById("myVideo1"); 
+            
+            function playVid() { 
+              vid.play(); 
+            } 
+            
+            function pauseVid() { 
+              vid.pause(); 
+            } 
+            </script> 
+
+<script>
+    var elem = document.getElementById("myVideo1");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
+            
+    </body>
+</html>

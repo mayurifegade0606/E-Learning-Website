@@ -1,0 +1,222 @@
+<html>
+  <head>
+<style>
+
+  div.slide-Up {
+    height:200px;
+    overflow:hidden;
+  }
+  div.slide-Up p {
+    animation: 10s slide-up;
+    margin-top:0%;
+  }
+  
+  
+  @keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
+
+  </style>
+  </head>
+  <body>
+    
+  
+  
+  <div class="slide-Up">
+  <p>Slide up... </p>
+  <h1>
+    Rushali 
+  </h1>
+  <h2>chaudhari</h2>
+  </div>
+</body>
+  </html>
+  
+
+
+  
+
+
+
+  <?php
+// Connecting to the Database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "rusha";
+
+// Create a connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Die if connection was not successful
+if (!$conn){
+    die("Sorry we failed to connect: ". mysqli_connect_error());
+}
+else{
+    echo "Connection was successful<br>";
+}
+
+// Create a table in the db
+$sql = "CREATE TABLE `Rushali` ( `sno` INT(6) NOT NULL AUTO_INCREMENT , `name` VARCHAR(12) NOT NULL , `dest` VARCHAR(6) NOT NULL , PRIMARY KEY (`sno`))";
+$result = mysqli_query($conn, $sql);
+
+// Check for the table creation success
+if($result){
+    echo "The table was created successfully!<br>";
+}
+else{
+    echo "The table was not created successfully because of this error ---> ". mysqli_error($conn);
+}
+  
+?>
+
+<a href="register.php"></a>
+
+<div class="person">
+  <h3><?php echo "Welcome ". $_SESSION['username']?>! You can now use this website</h3>
+  <hr>
+
+
+<div class="header">
+       
+  <nav >
+      <div class="logo">
+          <img src="capstonelogo.png">
+      </div>
+      <ul>
+ 
+                   <li class="active"><a href="Home.html" > <i class="fas fa-home"></i>Home</a></li>
+                   <li><a href="About_us.html" ><i class="fas fa-address-card"></i>About_us</a></li>
+                   <li><a href="cources.html" ><i class="fas fa-book-reader"></i>Courses</a></li>
+                   <li><a href="Contact_us.html" ><i class="fas fa-user-circle"></i>Contact_us</a></li>
+                   <li><a href="Log_in.html" ><i class="fas fa-user"></i>Log_in</a></li>
+              
+                  </ul>
+               </nav>
+       </div>
+
+<!--Footer Section -->
+<section class="footer">
+  <div class="box-container">
+      
+      <div class="box">
+          <h3>Collections</h3>
+          <a href="Home.html" ><i class="fas fa-arrow-right"></i> Home</a>
+          <a href="About_us.html" ><i class="fas fa-arrow-right"></i>About_us</a>
+          <a href="cources.html" ><i class="fas fa-arrow-right"></i>Courses</a>
+          <a href="Contact_us.html" ><i class="fas fa-arrow-right"></i>Contact_us</a>
+          <a href="Log_in.html" ><i class="fas fa-arrow-right"></i>Log_in</a>
+           </div>
+
+           <div class="box">
+               <h3>Social links</h3>
+              <a href="#" ><i class="fab fa-facebook"></i> Facebook</a>
+             <a href="#" ><i class="fab fa-instagram-square"></i>Instagram</a>
+              <a href="#" ><i class="fab fa-twitter"></i>Twitter</a>
+              <a href="#" ><i class="fab fa-linkedin"></i>LinkDin</a>
+              <a href="#" ><i class="fab fa-github-square"></i>Github</a>
+        </div>
+  </div>
+  <div class="credit">
+      <hr>
+      Created By student of Government Polytechnic,Jalgaon
+      <hr>
+  </div>
+</section>
+<!--Footer Section end-->
+
+
+
+
+
+.circle3{
+  width: 400px;
+  height: 327px;
+  border-radius: 0 0 300px 0px;
+  background-color: rgba(248, 248, 241, 0.849);
+  margin-top: 156px;
+  margin-left: 560px;
+  transform: rotate(180deg);
+  position: absolute;
+ 
+}
+
+
+
+<div class="registerBg">
+         
+  <div class="registerBg1">
+      <img src="registerBg.jpg" alt="sd">
+ </div>
+
+ 
+<div class="registercontainer">
+<div class="registerBg2">
+ <img src="registerBg.jpg" alt="abx">
+ 
+</div>
+<div class="registerGif">
+     <img src="200w.gif" alt="gif" height="300px" width="300px">
+ </div>
+
+<form action="" method="post">
+
+<div class="textName">
+<input type="text" class="form-control" name="Name" placeholder="Name" required><br>
+<input type="text" class="form-control" name="Mobile_No" placeholder="Moblie_No" required><br>
+<input type="text" class="form-control" name="username" id="inputEmail4" placeholder="username"><br>
+<input type="password" class="form-control" name ="password" id="inputPassword4" placeholder="Password"><br>
+<input type="password" class="form-control" name ="confirm_password" id="inputPassword" placeholder="Confirm Password"><br>
+<button type="submit" class="btn-btn-primary">Sign in</button>
+</div>
+</form>
+
+</div>
+
+</div>
+
+
+
+.registerBg{
+    
+  height: 80%;
+  width: 100%;
+  position: absolute;
+ 
+}
+.registerBg1 img{
+ 
+  height: 60%;
+  width: 100%;
+  box-shadow: 5px 0px 5px rgb(226, 228, 247);
+
+}
+.registerGif img{
+  margin-top: -470px;
+  position: absolute;
+  margin-left: 60px;
+}
+.registerBg2 img{
+  margin-top: 30px;
+  height: 100%;
+  width: 93%;
+ 
+  margin-top: -580px;
+  position: absolute;
+  margin-left: 50px;
+  box-shadow: 5px 0px 5px rgb(226, 228, 247);
+  
+}
+
+.textName{
+  margin-left: 720px;
+  margin-top: -510px;
+  position: absolute;
+  
